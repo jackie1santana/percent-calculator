@@ -1,5 +1,19 @@
-h1 {
-  color: blue;
+h2 {
+  color: black;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+}
+div p {
+  display: inline;
+}
+div input {
+  font-size: 15px;
+}
+div button {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=/app.581aa3f0.css.map */

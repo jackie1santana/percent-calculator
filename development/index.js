@@ -184,53 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../src/scss/app.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/app.js":[function(require,module,exports) {
-"use strict";
-
-require("./scss/app.scss");
-
-//Percentage You agree upon in a business offer
-var givenPercent = function givenPercent(percent, amount) {
-  var formInput = document.querySelector('#percentRes');
-  console.log(formInput.name.value);
-  formInput.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log('submit');
-  });
-  var moneyYouGet = percent * 0.01 * amount;
-  console.log(" Business Offer: ".concat(percent, "% of $").concat(amount.toLocaleString(), " \n The amount you will Receive: ").concat(moneyYouGet.toFixed(2)));
-};
-
-givenPercent(4, 14000); //Price on Sale
-
-var onSalePercent = function onSalePercent(wholePrice, salePrice) {
-  var priceAfterDiscount = (100 - salePrice) * 0.01 * wholePrice;
-  var moneySaved = wholePrice - priceAfterDiscount;
-  console.log(" Current Price: $".concat(wholePrice.toFixed(2), " \n It's On Sale For: ").concat(salePrice, "% \n The new price you pay is $").concat(priceAfterDiscount.toFixed(2), " \n You Saved $").concat(moneySaved.toFixed(2)));
-};
-
-onSalePercent(600, 15); // 15% Tip for a waiter
-
-var _15tipCalculator = function _15tipCalculator(bill) {
-  var tip = 15 * 0.01 * bill;
-  console.log("15 Percent Tip: the tip you should leave is ".concat(tip.toFixed(2)));
-};
-
-_15tipCalculator(25); // 20% Tip for a waiter
-
-
-var _20tipCalculator = function _20tipCalculator(bill) {
-  var tip = 20 * 0.01 * bill;
-  console.log("20 Percent Tip: the tip you should leave is ".concat(tip.toFixed(2)));
-};
-
-_20tipCalculator(20);
-},{"./scss/app.scss":"../src/scss/app.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -434,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../src/app.js"], null)
-//# sourceMappingURL=/app.581aa3f0.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map

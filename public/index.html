@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My App</title>
-</head>
-<body>
-    <h1>Hello World</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+  </head>
+  <body>
+    <div>
+      <section>
+        <h2>
+          Percent Received <br />
+          in Business Offer
+        </h2>
+        <form action="">
+          <input type="text" name="percent" placeholder="Percent" id="percentRes"/>
+          <br />
+          <input type="text" name="amount" placeholder="Amount" />
+          <br />
+          <br />
+          <button id="percentButton">Submit</button>
+          <p class="businessRes"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Price on Sale</h2>
+        <form action="">
+          <input type="text" name="currentPrice" placeholder="Current Price" />
+
+          <br />
+
+          <input type="text" name="salePrice" placeholder="Sale Percent" />
+          <br />
+          <br />
+          <button class="percentButton" id="percentButton">Submit</button>
+          <p id="businessRes"></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Restaurant Tip</h2>
+        <form action="">
+            <input type="text" name="amount" placeholder="Amount">
+            <br>
+            <br>
+          <button id="_15_tipButton">Click 15% of Amount</button> 
+          <br>
+          <br>
+
+          <button id="_20_tipButton">Click 20% of Amount</button>
+          <p></p>
+        </form>
+      </section>
+    </div>
     <script src="../src/app.js"></script>
-</body>
+  </body>
 </html>
