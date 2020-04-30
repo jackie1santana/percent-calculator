@@ -1,14 +1,19 @@
 $black-text: black;
 $input_button_font: 15px;
 
+body{
+    display: flex;
+    justify-content:center ;
+  
+}
 
 h2 {
     color: $black-text
 }
 
 div{
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-block;
+    
     p{
         display: inline;
     }

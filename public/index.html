@@ -9,23 +9,26 @@
     <div>
       <section>
         <h2>
-          Percent Received <br />
+          Percent Proposal <br />
           in Business Offer
         </h2>
-        <form action="">
+        <form id="businessForm" action="">
           <input type="text" name="percent" placeholder="Percent" id="percentRes"/>
           <br />
           <input type="text" name="amount" placeholder="Amount" />
           <br />
           <br />
-          <button id="percentButton">Submit</button>
-          <p class="businessRes"></p>
+          <button id="percentButton">How much do I receive?</button>
+          <p id="businessRes"></p>
         </form>
       </section>
 
+      <br>
+      <br>
+
       <section>
         <h2>Price on Sale</h2>
-        <form action="">
+        <form id="onSaleForm" action="">
           <input type="text" name="currentPrice" placeholder="Current Price" />
 
           <br />
@@ -33,23 +36,21 @@
           <input type="text" name="salePrice" placeholder="Sale Percent" />
           <br />
           <br />
-          <button class="percentButton" id="percentButton">Submit</button>
-          <p id="businessRes"></p>
+          <button class="percentButton" id="percentButton">Check Price</button>
+          <p id="onSaleRes"></p>
         </form>
       </section>
-
+<br>
+<br>
       <section>
         <h2>Restaurant Tip</h2>
-        <form action="">
+        <form id="tipForm" action="">
             <input type="text" name="amount" placeholder="Amount">
             <br>
             <br>
-          <button id="_15_tipButton">Click 15% of Amount</button> 
-          <br>
-          <br>
-
-          <button id="_20_tipButton">Click 20% of Amount</button>
-          <p></p>
+          <button id="_15_tipButton">How much should I tip?</button> 
+      
+          <p id="tipRes" ></p>
         </form>
       </section>
     </div>
